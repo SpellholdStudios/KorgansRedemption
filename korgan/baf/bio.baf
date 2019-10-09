@@ -1,0 +1,12 @@
+IF
+  Global("StartEndBios","AR6200",1)
+  InParty("Korgan")
+  Global("KorganBio","GLOBAL",0)
+  Alignment("Korgan",CHAOTIC_NEUTRAL)
+
+THEN
+  RESPONSE #100
+    SetGlobal("KorganBio","GLOBAL",1)
+    TextScreen("KORGAND1")
+    SmallWait(1)
+END

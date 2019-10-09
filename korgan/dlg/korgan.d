@@ -1,0 +1,291 @@
+ADD_STATE_TRIGGER BKORGAN 1 ~Global("KorganMazzy","GLOBAL",0)~
+
+SET_WEIGHT BKORGAN 1 #-1
+
+ALTER_TRANS BKORGAN BEGIN 1 END BEGIN 0 END BEGIN "ACTION" ~SetGlobal("KorganMazzy","GLOBAL",1) RealSetGlobalTimer("KorgMaz","GLOBAL",3600)~ END
+
+ADD_STATE_TRIGGER BKORGAN 3 ~Global("KorganMazzy","GLOBAL",2)~
+
+SET_WEIGHT BKORGAN 3 #-1
+
+ALTER_TRANS BKORGAN BEGIN 3 END BEGIN 0 END BEGIN"ACTION" ~SetGlobal("KorganMazzy","GLOBAL",3) RealSetGlobalTimer("KorgMaz","GLOBAL",3600)~ END
+
+ADD_STATE_TRIGGER BKORGAN 5 ~Global("KorganMazzy","GLOBAL",4)~
+
+SET_WEIGHT BKORGAN 5 #-1
+
+ALTER_TRANS BKORGAN BEGIN 5 END BEGIN 0 END BEGIN"ACTION" ~SetGlobal("KorganMazzy","GLOBAL",5) RealSetGlobalTimer("KorgMaz","GLOBAL",3600)~ END
+
+ADD_STATE_TRIGGER BKORGAN 43 ~Global("KorganMazzy","GLOBAL",6)~
+
+SET_WEIGHT BKORGAN 43 #-1
+
+ALTER_TRANS BKORGAN BEGIN 43 END BEGIN 0 END BEGIN"ACTION" ~SetGlobal("KorganMazzy","GLOBAL",7) ~ END
+
+REPLACE_STATE_TRIGGER BKORGA25 57 ~Global("KorganMazzy","GLOBAL",8)InParty("Mazzy")See("Mazzy")!StateCheck("Mazzy",STATE_SLEEPING)~
+
+SET_WEIGHT BKORGA25 57 #-1
+
+ALTER_TRANS BKORGA25 BEGIN 57 END BEGIN 0 END BEGIN"ACTION" ~SetGlobal("KorganMazzy","GLOBAL",9) ~ END
+
+REPLACE_STATE_TRIGGER BKORGA25 66 ~Global("KorganMazzy","GLOBAL",22)InParty("Mazzy")See("Mazzy")!StateCheck("Mazzy",STATE_SLEEPING)~
+
+SET_WEIGHT BKORGA25 66 #-1
+
+ALTER_TRANS BKORGA25 BEGIN 66 END BEGIN 0 END BEGIN"ACTION" ~SetGlobal("KorganMazzy","GLOBAL",23)RealSetGlobalTimer("KorgMaz","GLOBAL",1200) ~ END
+
+
+
+
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",10)~ THEN BKORGA25 PI#01
+@0
+== BMAZZY25
+@1
+== BKORGA25
+@2
+== BMAZZY25
+@3
+=
+@4
+=
+@5
+== BKORGA25
+@6
+=
+@7
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",11)RealSetGlobalTimer("KorgMaz","GLOBAL",1200)~ EXIT
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",12)~ THEN BKORGA25 PI#02
+@8
+== BMAZZY25
+@9
+== BKORGA25
+@10
+=
+@11
+== BMAZZY25
+@12
+== BKORGA25
+@13
+== BMAZZY25
+@14
+== BKORGA25
+@15
+=
+@16
+=
+@17
+=
+@18
+=
+@19
+== BMAZZY25
+@20
+== BKORGA25
+@21
+=
+@22
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",13)~ EXIT
+
+
+CHAIN IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",14)~ THEN BKORGA25 PI#03
+@23
+== BMAZZY25
+@24
+== BKORGA25
+@25
+== BMAZZY25
+@26
+== BKORGA25
+@27
+=
+@28
+=
+@29
+== BMAZZY25
+@30
+== BKORGA25
+@31
+=
+@32
+=
+@33
+=
+@34
+=
+@35
+=
+@36
+== BMAZZY25
+@37
+== BKORGA25
+@38
+=
+@39
+=
+@40
+== BMAZZY25
+@41
+== BKORGA25
+@42
+=
+@43
+=
+@44
+== BMAZZY25
+@45
+=
+@46
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",16)RestParty()~ EXIT
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",16)~ THEN BKORGA25 PI#05
+@47
+== BMAZZY25
+@48
+=
+@49
+== BKORGA25
+@50
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",17)RealSetGlobalTimer("KorgMaz","GLOBAL",300)~ EXIT
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",18)~ THEN BMAZZY25 PI#06
+@51
+== BKORGA25
+@52
+=
+@53
+== BMAZZY25
+@54
+== BKORGA25
+@55
+=
+@56
+== BMAZZY25
+@57
+== BKORGA25
+@58
+== BMAZZY25
+@59
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",19)RealSetGlobalTimer("KorgMaz","GLOBAL",1200)~ EXIT
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",20)~ THEN BMAZZY25 PI#07
+@60
+== BKORGA25
+@61
+== BMAZZY25
+@62
+== BKORGA25
+@63
+== BMAZZY25
+@64
+== BKORGA25
+@65
+== BMAZZY25
+@66
+== BKORGA25
+@67
+== BMAZZY25
+@68
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",21)RealSetGlobalTimer("KorgMaz","GLOBAL",1200)~ EXIT
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",24)~ THEN BKORGA25 PI#08
+@69
+== BMAZZY25
+@70
+== BKORGA25
+@71
+== BMAZZY25
+@72
+=
+@73
+=
+@74
+=
+@75
+== BKORGA25
+@76
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",25)RealSetGlobalTimer("KorgMaz","GLOBAL",1200)~ EXIT
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",26)~ THEN BKORGA25 PI#09
+@77
+== BMAZZY25
+@78
+== BKORGA25
+@79
+=
+@80
+== BMAZZY25
+@81
+== BKORGA25
+@82
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",27)~ EXIT
+
+BEGIN PI#AMKO
+IF ~True()~ THEN BEGIN PI#01
+SAY@83
+IF~~ THEN GOTO PI#10
+END
+
+CHAIN
+IF WEIGHT #-1 ~~ THEN PI#AMKO PI#10
+@84
+=
+@85
+== BKORGA25
+@86
+== BMAZZY25
+@87
+== PI#AMKO
+@88
+== BKORGA25
+@89
+=
+@90
+== PI#AMKO
+@91
+== BKORGA25
+@92
+== PI#AMKO
+@93
+END
+IF~~ THEN DO~SetGlobal("KorganMazzy","GLOBAL",30) EscapeArea() Wait(3) ~EXIT
+
+CHAIN
+IF WEIGHT #-1~Global("KorganMazzy","GLOBAL",30)~ THEN BMAZZY25 PI#11
+@94
+== BKORGA25
+@95
+END
+IF~~ THEN DO~ChangeAlignment("Korgan",CHAOTIC_NEUTRAL) SetGlobal("KorganMazzy","GLOBAL",31)~ EXIT
+
+
+ADD_TRANS_TRIGGER KORGA25A 4 ~!InParty("Mazzy")~
+EXTEND_BOTTOM KORGA25A 4
+IF~InParty("Mazzy")~ THEN GOTO PI#20
+END
+
+APPEND KORGA25A
+
+IF~~ THEN BEGIN PI#20
+SAY@96
+IF~~ THEN REPLY @97 DO~SetGlobal("KorganMazzy","GLOBAL",9) JoinParty()~ EXIT
+IF~~ THEN REPLY @98 DO~ JoinParty()~ EXIT
+END
+END
+

@@ -1,0 +1,12 @@
+
+IF
+	InParty("Mazzy")
+	InParty("Korgan")
+	!StateCheck("Korgan",STATE_SLEEPING)
+	!StateCheck("Mazzy",STATE_SLEEPING)
+	Global("KorganMazzy","GLOBAL",13)
+THEN
+	RESPONSE #100
+		IncrementGlobal("KorganMazzy","GLOBAL",1)
+		ActionOverride("Korgan",Interact("Mazzy"))
+END

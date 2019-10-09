@@ -1,0 +1,57 @@
+IF
+	OR(3)
+	Global("KorganMazzy","GLOBAL",1)
+	Global("KorganMazzy","GLOBAL",3)
+	Global("KorganMazzy","GLOBAL",5)
+	RealGlobalTimerExpired("KorgMaz","GLOBAL")
+THEN
+	RESPONSE #100
+		IncrementGlobal("KorganMazzy","GLOBAL",1)
+END
+
+IF
+	InParty(Myself)
+	InParty("Mazzy")
+	Global("MazzyKorgan","GLOBAL",0)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("KorgMaz","GLOBAL",3600)
+		SetGlobal("MazzyKorgan","GLOBAL",1)
+END
+
+IF
+	InParty(Myself)
+	InParty("Mazzy")
+	Global("MazzyKorgan","GLOBAL",1)
+	RealGlobalTimerExpired("KorgMaz","GLOBAL")
+	See("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+THEN
+	RESPONSE #100
+		SetGlobal("MazzyKorgan","GLOBAL",2)
+		Interact("Mazzy")
+END
+
+IF
+	OR(2)
+		Global("KorganMazzy","GLOBAL",2)
+		Global("KorganMazzy","GLOBAL",4)
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+	InParty("Mazzy")
+THEN
+	RESPONSE #100
+	Interact("Mazzy")
+END
+
+IF
+	Global("KorganMazzy","GLOBAL",6)
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+	AreaType(CITY)
+THEN
+	RESPONSE #100
+		Interact("Mazzy")
+END
