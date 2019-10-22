@@ -1,0 +1,12 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Korgan")
+		ClearAllActions()
+		StartCutSceneMode()
+		CreateCreatureObjectOffScreen("PI#amko","Korgan",0,0,0)
+		Wait(1)
+		ActionOverride("PI#amko",MoveToObject("Korgan"))
+		ActionOverride("PI#amko",StartDialogueNoSet("Korgan"))
+END
