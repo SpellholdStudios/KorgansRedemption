@@ -144,7 +144,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ##### Version 8
 
-- Added French translation (thanls to  Le Marquis (of the d'oghmatiques)).
+- Added French translation (thanks to Le Marquis, of the d'oghmatiques).
 - Fixed some bugs.
 
 ## 
@@ -174,7 +174,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## 
 
-##### Version 3 (Not beta anymore &#128541;)
+##### Version 3 (Not beta anymore &#128521;)
 
 - Fixed some bugs.
 - Tweaked some banters for CN Korgan.
