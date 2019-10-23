@@ -1,12 +1,12 @@
 
-![Latest Release](https://img.shields.io/static/v1?label=release&message=v2.0.0&color=darkred)<a name="top" id="top">
+![Latest Release](https://img.shields.io/static/v1?label=release&message=v10.0.0&color=darkred)<a name="top" id="top">
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)
 
 <div align="center"><h1></a>Korgan's Redemption (WIP)</h1>
 
-### A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),
-### Baldur's Gate Trilogy and EET
+<h3>A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),
+Baldur's Gate Trilogy and EET<h3>
 
 </div><br />
 Down=http://www.shsforums.net/index.php?app=downloads&module=display&section=download&do=confirm_download&id=933
