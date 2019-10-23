@@ -1,0 +1,82 @@
+BACKUP ~korgan\backup~
+//AUTHOR ~Picollo~
+SUPPORT ~http://www.shsforums.net/topic/46432-korgans-redemption/~
+
+VERSION ~10.0.0~
+
+README ~korgan/readme/korgan-readme-%LANGUAGE%.txt~ ~korgan/readme/korgan-readme-english.txt~
+
+
+ALWAYS
+
+	ACTION_DEFINE_ARRAY T_reload BEGIN setup END
+	ACTION_DEFINE_ARRAY T_noconvert BEGIN END
+		LAF HANDLE_CHARSETS
+		INT_VAR
+		infer_charset = 1
+		STR_VAR
+		tra_path = EVAL ~%MOD_FOLDER%/lang~
+		noconvert_array = T_noconvert
+		reload_array = T_reload
+	END
+END
+
+
+AUTO_TRA ~korgan/lang/%s~
+
+LANGUAGE ~Polish~
+		 ~polish~
+		 ~korgan/lang/polish/setup.tra~
+	 
+LANGUAGE ~English~
+		 ~english~
+		 ~korgan/lang/english/setup.tra~
+	 
+LANGUAGE ~Russian~
+		 ~russian~
+		 ~korgan/lang/russian/setup.tra~
+	 
+LANGUAGE ~Francais (traduction : Le Marquis)~
+		 ~french~
+		 ~korgan/lang/french/setup.tra~
+
+LANGUAGE ~Deutsch~
+		 ~german~
+		 ~korgan/lang/german/setup.tra~
+
+
+/* ==================================== *
+ *         Korgan's Redemption          *
+ * ==================================== */
+
+BEGIN @0
+DESIGNATED 0
+REQUIRE_PREDICATE GAME_IS ~tob bgt bg2ee eet~ @1
+
+COMPILE ~korgan/dlg/korgan.d~
+COMPILE ~korgan/dlg/bkorgan.d~
+
+EXTEND_TOP ~korgan.bcs~ ~korgan/baf/korgan.baf~
+EXTEND_TOP ~korg25.bcs~ ~korgan/baf/korg25.baf~
+EXTEND_TOP ~mazz25.bcs~ ~korgan/baf/mazz25.baf~
+COMPILE ~korgan/baf/pi#amko.baf~
+
+// Drunken Mercenary
+COPY_EXISTING ~AMMERC09.cre~ ~override/pi#amko.cre~
+	WRITE_ASCII DIALOG ~pi#amko~ #8
+	SAY NAME1 @10
+	SAY NAME2 @10
+	WRITE_ASCII 0x280 ~pi#amko~ #8
+	WRITE_BYTE  0x270 128
+	WRITE_ASCII SCRIPT_CLASS ~~ #8
+	WRITE_ASCII SCRIPT_RACE ~~ #8
+	WRITE_ASCII SCRIPT_DEFAULT ~~ #8
+	REPLACE_CRE_ITEM ~sw1h41~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
+	ADD_CRE_ITEM ~sw1h06~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON2~
+
+EXTEND_TOP ~ar6200.bcs~ ~korgan/baf/bio.baf~
+
+EXTEND_TOP ~player1d.bcs~ ~korgan/baf/player1d.baf~
+
+COPY ~korgan/korgand1.2da~ ~override~
+REPLACE ~99999~ @11
