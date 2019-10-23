@@ -1,0 +1,61 @@
+IF
+	Global("KorganMazzy","GLOBAL",7)
+	AreaCheck("AR4000")
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+THEN
+	RESPONSE #100
+		IncrementGlobal("KorganMazzy","GLOBAL",1)
+END
+
+IF
+	OR(7)
+		Global("KorganMazzy","GLOBAL",8)
+		Global("KorganMazzy","GLOBAL",10)
+		Global("KorganMazzy","GLOBAL",12)
+		Global("KorganMazzy","GLOBAL",16)
+		Global("KorganMazzy","GLOBAL",22)
+		Global("KorganMazzy","GLOBAL",24)
+		Global("KorganMazzy","GLOBAL",26)
+THEN
+	RESPONSE #100
+		Interact("Mazzy")
+END
+
+IF
+	Global("KorganMazzy","GLOBAL",9)
+	AreaCheck("AR4500")
+	GlobalGT("BeginChallenge1","GLOBAL",10)
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+THEN
+	RESPONSE #100
+		IncrementGlobal("KorganMazzy","GLOBAL",1)
+END
+
+IF
+	OR(4)
+		Global("KorganMazzy","GLOBAL",21)
+		Global("KorganMazzy","GLOBAL",11)
+		Global("KorganMazzy","GLOBAL",23)
+		Global("KorganMazzy","GLOBAL",25)
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",STATE_SLEEPING)
+	RealGlobalTimerExpired("KorgMaz","GLOBAL")
+THEN
+	RESPONSE #100
+		IncrementGlobal("KorganMazzy","GLOBAL",1)
+END
+
+IF
+	Global("KorganMazzy","GLOBAL",27)
+	AreaCheck("AR5500")
+THEN
+	RESPONSE #100
+		IncrementGlobal("KorganMazzy","GLOBAL",1)
+		StartCutScene("PI#amko")
+END
+
