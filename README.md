@@ -9,8 +9,6 @@
 Baldur's Gate Trilogy and EET<h3>
 
 </div><br />
-Down=http://www.shsforums.net/index.php?app=downloads&module=display&section=download&do=confirm_download&id=933
-Save=Korgan_v8.zip
 
 
 **Original Authors:** Picollo  
@@ -132,7 +130,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Replaced AUTHOR keyword with SUPPORT.
 - Added version flag.
 - Added German translation (from the BiG World Textpack German project). 
-- Updated and renamed readme file to korgan-readme-%LANGUAGE%.
+- Updated and renamed readme files to korgan-readme-%LANGUAGE%.
 - Updated French and English translations (Gwendolyne).
 
 ## 
