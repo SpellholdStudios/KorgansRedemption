@@ -21,20 +21,21 @@ Ou alors, cherchez le sujet correspondant à ce mod sur le forum de SHS ( http://
 Historique
 
 v.10.0.0
-- Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
-- Added korgan.ini metadata file to support AL|EN's "Project Infinity".
-- Reorganized mod architecture tree: created folders to sort files according to their types.
-- Reorganized component (DESIGNATED number).
-- Added REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
-- Added README command in tp2.
-- Replaced AUTHOR keyword with SUPPORT.
-- Added version flag.
-- Added German translation (from the BiG World Textpack German project). 
-- Updated and renamed readme file to korgan-readme-%LANGUAGE%.
-- Updated French and English translations (Gwendolyne).
+- Fichier Setup-Korgan.tp2 renommé korgan.tp2 pour une meilleure intégration dans le projet « Project Infinity » d'AL|EN.
+- Ajout du fichier de meta-données korgan.ini pour intégration dans le projet « Project Infinity » d'AL|EN.
+- Réorganisation de l'architecture du mod : création de répertoire pour classer les fichiers selon leur type.
+- Ajout d'un numéro (DESIGNATED) au composant.
+- Ajout de la procédure REQUIRE_PREDICATE pour éviter d'installer le mod dans des jeux auxquels il n'est pas destiné.
+- Ajout de la commande README dans le tp2.
+- Remplacement de la variable AUTHOR par SUPPORT.
+- Ajout du numéro de version.
+- Ajout de la traduction allemande (tirée du projet BiG World Textpack German). 
+- Mise à jour des fichiers readme renommés korgan-readme-%LANGUAGE%.
+- Mise à jour des traductions françaises et anglaises (Gwendolyne).
 
 v.9
 - Rendu compatible avec BG2EE (merci à Deratiseur).
+- Mise à jour de WeiDU (v246)
 
 v.8
 - Ajout de la traduction française (merci à Le Marquis, des d'oghmatiques).

@@ -30,7 +30,7 @@ v.10.0.0
 - Replaced AUTHOR keyword with SUPPORT.
 - Added version flag.
 - Added German translation (from the BiG World Textpack German project). 
-- Updated and renamed readme file to korgan-readme-%LANGUAGE%.
+- Updated and renamed readme files to korgan-readme-%LANGUAGE%.
 - Updated French and English translations (Gwendolyne).
 
 v.9
