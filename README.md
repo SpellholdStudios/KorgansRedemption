@@ -5,14 +5,15 @@
 
 <div align="center"><h1></a>Korgan's Redemption (WIP)</h1>
 
-### A mod for Baldur's Gate II: Throne of Bhaal (classical and EE games), Baldur's Gate Trilogy and EET
+### A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),
+### Baldur's Gate Trilogy and EET
 
 </div><br />
 Down=http://www.shsforums.net/index.php?app=downloads&module=display&section=download&do=confirm_download&id=933
 Save=Korgan_v8.zip
 
 
-**Original Authors:** Picollo
+**Original Authors:** Picollo  
 **Mod Website and Forum:** <a href="http://www.shsforums.net/topic/46432-korgans-redemption/">Spellhold Studios</a><br /><br />
 
 
@@ -29,7 +30,7 @@ This mod was inspired by a discussion on CoB about content removed from ToB. It 
 
 You will NOT be able to stop this redemption nor help it. In the vanilla game, banters between Mazzy and Korgan suggested the possibility of changing Korgan, and I wanted to keep it like the original.
 
-It's recommended to start a new SoA game to be able to see the whole relationship between them. But I'm adding content only for ToB.
+It's recommended to start a new SoA game to benefit from the whole relationship between them. But I'm adding content only for ToB.
 
 If you are starting new ToB game, you should have Mazzy in party before Korgan.
 
