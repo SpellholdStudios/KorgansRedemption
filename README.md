@@ -174,7 +174,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## 
 
-##### Version 3 (Not beta anymore ;) )
+##### Version 3 (Not beta anymore &#128541;)
 
 - Fixed some bugs.
 - Tweaked some banters for CN Korgan.
