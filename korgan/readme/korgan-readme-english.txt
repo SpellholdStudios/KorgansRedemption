@@ -28,12 +28,13 @@ v.10.0.0
 - Added REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
 - Added README command in tp2.
 - Replaced AUTHOR keyword with SUPPORT.
-- Added version flag.
+- Added VERSION flag.
 - Added German translation (from the BiG World Textpack German project). 
 - Updated and renamed readme files to korgan-readme-%LANGUAGE%.
 - Updated French and English translations (Gwendolyne).
+- Updated WeiDU installer to v246.
 
-v.9
+v.9 (July 31, 2019)
 - BG2EE compatibility (thanks to Deratiseur).
 
 v.8

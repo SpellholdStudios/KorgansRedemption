@@ -32,8 +32,9 @@ v.10.0.0
 - Ajout de la traduction allemande (tirée du projet BiG World Textpack German). 
 - Mise à jour des fichiers readme renommés korgan-readme-%LANGUAGE%.
 - Mise à jour des traductions françaises et anglaises (Gwendolyne).
+- Updated WeiDU installer to v246.
 
-v.9
+v.9 (July 31, 2019)
 - Rendu compatible avec BG2EE (merci à Deratiseur).
 - Mise à jour de WeiDU (v246)
 
