@@ -11,7 +11,7 @@ Baldur's Gate Trilogy and EET<h3>
 </div><br />
 
 
-**Original Author:** <a href="http://www.shsforums.net/user/12844-picollo/"Picollo /a> 
+**Original Author:** <a href="http://www.shsforums.net/user/12844-picollo/">Picollo</a>  
 **Mod Website and Forum:** <a href="http://www.shsforums.net/topic/46432-korgans-redemption/">Spellhold Studios</a><br /><br />
 
 
