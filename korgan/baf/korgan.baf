@@ -1,4 +1,6 @@
 IF
+	InParty(Myself)
+	InParty("Mazzy")
 	OR(3)
 	Global("KorganMazzy","GLOBAL",1)
 	Global("KorganMazzy","GLOBAL",3)
@@ -21,11 +23,12 @@ END
 
 IF
 	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
 	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",CD_STATE_NOTVALID)
 	Global("MazzyKorgan","GLOBAL",1)
 	RealGlobalTimerExpired("KorgMaz","GLOBAL")
-	See("Mazzy")
-	!StateCheck("Mazzy",STATE_SLEEPING)
 THEN
 	RESPONSE #100
 		SetGlobal("MazzyKorgan","GLOBAL",2)
@@ -33,23 +36,26 @@ THEN
 END
 
 IF
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",CD_STATE_NOTVALID)
 	OR(2)
 		Global("KorganMazzy","GLOBAL",2)
 		Global("KorganMazzy","GLOBAL",4)
-	InParty("Mazzy")
-	See("Mazzy")
-	!StateCheck("Mazzy",STATE_SLEEPING)
-	InParty("Mazzy")
 THEN
 	RESPONSE #100
 	Interact("Mazzy")
 END
 
 IF
-	Global("KorganMazzy","GLOBAL",6)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
 	InParty("Mazzy")
 	See("Mazzy")
-	!StateCheck("Mazzy",STATE_SLEEPING)
+	!StateCheck("Mazzy",STATE_SLEEPING)	!StateCheck("Mazzy",CD_STATE_NOTVALID)
+	Global("KorganMazzy","GLOBAL",6)
 	AreaType(CITY)
 THEN
 	RESPONSE #100

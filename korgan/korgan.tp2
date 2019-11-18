@@ -2,7 +2,7 @@ BACKUP ~korgan\backup~
 //AUTHOR ~Picollo~
 SUPPORT ~http://www.shsforums.net/topic/46432-korgans-redemption/~
 
-VERSION ~10.0.0~
+VERSION ~v10.0.0~
 
 README ~korgan/readme/korgan-readme-%LANGUAGE%.txt~ ~korgan/readme/korgan-readme-english.txt~
 
@@ -15,34 +15,39 @@ ALWAYS
 		INT_VAR
 		infer_charset = 1
 		STR_VAR
-		tra_path = EVAL ~%MOD_FOLDER%/lang~
+		tra_path = EVAL ~%MOD_FOLDER%/tra~
 		noconvert_array = T_noconvert
 		reload_array = T_reload
 	END
+
+	/* CamDawg's custom IsValidForPartyDialogue() state. Thanks Cam!
+	   covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING */
+	APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
 END
 
 
-AUTO_TRA ~korgan/lang/%s~
+AUTO_TRA ~korgan/tra/%s~
 
-LANGUAGE ~Polish~
+LANGUAGE ~Polski~
 		 ~polish~
-		 ~korgan/lang/polish/setup.tra~
+		 ~korgan/tra/polish/setup.tra~
 	 
 LANGUAGE ~English~
 		 ~english~
-		 ~korgan/lang/english/setup.tra~
+		 ~korgan/tra/english/setup.tra~
 	 
-LANGUAGE ~Russian~
+LANGUAGE ~Russian (translation by Austin)~
 		 ~russian~
-		 ~korgan/lang/russian/setup.tra~
+		 ~korgan/tra/russian/setup.tra~
 	 
 LANGUAGE ~Francais (traduction : Le Marquis)~
 		 ~french~
-		 ~korgan/lang/french/setup.tra~
+		 ~korgan/tra/french/setup.tra~
 
-LANGUAGE ~Deutsch~
+LANGUAGE ~Deutsch (Uebersetzung von the BiG World Textpack German team)~
 		 ~german~
-		 ~korgan/lang/german/setup.tra~
+		 ~korgan/tra/german/setup.tra~
 
 
 /* ==================================== *
@@ -50,8 +55,8 @@ LANGUAGE ~Deutsch~
  * ==================================== */
 
 BEGIN @0
-DESIGNATED 0
 REQUIRE_PREDICATE GAME_INCLUDES ~tob~ @1
+DESIGNATED 0 LABEL ~Korgan_Redemption~
 
 COMPILE ~korgan/dlg/korgan.d~
 COMPILE ~korgan/dlg/bkorgan.d~
@@ -74,9 +79,15 @@ COPY_EXISTING ~AMMERC09.cre~ ~override/pi#amko.cre~
 	REPLACE_CRE_ITEM ~sw1h41~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
 	ADD_CRE_ITEM ~sw1h06~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON2~
 
+COPY_EXISTING ~ar6200.bcs~ ~override~
+	DECOMPILE_AND_PATCH BEGIN
+		REPLACE_TEXTUALLY ~\(Global("KorganBio","GLOBAL",0)\)~ ~\1 !Alignment("Korgan",CHAOTIC_NEUTRAL)~
+	END
+BUT_ONLY
+
 EXTEND_TOP ~ar6200.bcs~ ~korgan/baf/bio.baf~
 
 EXTEND_TOP ~player1d.bcs~ ~korgan/baf/player1d.baf~
 
-COPY ~korgan/korgand1.2da~ ~override~
+COPY ~korgan/2da/korgand1.2da~ ~override~
 REPLACE ~99999~ @11

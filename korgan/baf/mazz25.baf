@@ -1,18 +1,22 @@
 
 IF
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
 	OR(3)
 		Global("KorganMazzy","GLOBAL",18)
 		Global("KorganMazzy","GLOBAL",20)
 		Global("KorganMazzy","GLOBAL",30)
-	See("Korgan")
-	!StateCheck("Korgan",STATE_SLEEPING)
 	InParty("Korgan")
+	See("Korgan")
+	!StateCheck("Korgan",CD_STATE_NOTVALID)
 THEN
 	RESPONSE #100
 		Interact("Korgan")
 END
 
 IF
+	InParty(Myself)
+	InParty("Korgan")
 	OR(2)
 		Global("KorganMazzy","GLOBAL",17)
 		Global("KorganMazzy","GLOBAL",19)

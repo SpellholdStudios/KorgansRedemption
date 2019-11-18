@@ -9,4 +9,5 @@ THEN
     SetGlobal("KorganBio","GLOBAL",1)
     TextScreen("KORGAND1")
     SmallWait(1)
+	Continue()
 END

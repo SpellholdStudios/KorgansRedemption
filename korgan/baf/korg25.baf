@@ -1,15 +1,22 @@
 IF
 	Global("KorganMazzy","GLOBAL",7)
 	AreaCheck("AR4000")
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
 	InParty("Mazzy")
 	See("Mazzy")
-	!StateCheck("Mazzy",STATE_SLEEPING)
+	!StateCheck("Mazzy",CD_STATE_NOTVALID)
 THEN
 	RESPONSE #100
 		IncrementGlobal("KorganMazzy","GLOBAL",1)
 END
 
 IF
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",CD_STATE_NOTVALID)
 	OR(7)
 		Global("KorganMazzy","GLOBAL",8)
 		Global("KorganMazzy","GLOBAL",10)
@@ -27,9 +34,10 @@ IF
 	Global("KorganMazzy","GLOBAL",9)
 	AreaCheck("AR4500")
 	GlobalGT("BeginChallenge1","GLOBAL",10)
+	InParty(Myself)
 	InParty("Mazzy")
 	See("Mazzy")
-	!StateCheck("Mazzy",STATE_SLEEPING)
+	!StateCheck("Mazzy",CD_STATE_NOTVALID)
 THEN
 	RESPONSE #100
 		IncrementGlobal("KorganMazzy","GLOBAL",1)
@@ -41,9 +49,10 @@ IF
 		Global("KorganMazzy","GLOBAL",11)
 		Global("KorganMazzy","GLOBAL",23)
 		Global("KorganMazzy","GLOBAL",25)
+	InParty(Myself)
 	InParty("Mazzy")
 	See("Mazzy")
-	!StateCheck("Mazzy",STATE_SLEEPING)
+	!StateCheck("Mazzy",CD_STATE_NOTVALID)
 	RealGlobalTimerExpired("KorgMaz","GLOBAL")
 THEN
 	RESPONSE #100
@@ -53,6 +62,11 @@ END
 IF
 	Global("KorganMazzy","GLOBAL",27)
 	AreaCheck("AR5500")
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InParty("Mazzy")
+	See("Mazzy")
+	!StateCheck("Mazzy",CD_STATE_NOTVALID)
 THEN
 	RESPONSE #100
 		IncrementGlobal("KorganMazzy","GLOBAL",1)
