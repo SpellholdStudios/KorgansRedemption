@@ -20,46 +20,49 @@ or find the topic on SHS ( http://www.shsforums.net/topic/46432-korgans-redempti
 
 Changelog
 
-v.10.0.0
+Version 10.0.0
 - Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
 - Added korgan.ini metadata file to support AL|EN's "Project Infinity".
-- Reorganized mod architecture tree: created folders to sort files according to their types.
-- Reorganized component (DESIGNATED number).
+- Revamped scripts: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with more accurate CamDawg's !StateCheck("XXX",CD_STATE_NOTVALID) and added InParty("XXX") whenever needed.
+- bio.baf: Added Continue() at the end of RESPONSE block.
+- ar6200.bcs: Added !Alignment("Korgan",CHAOTIC_NEUTRAL) condition to forbid original epilogue to be displayed.
+- Reorganized component (DESIGNATED number) and added LABEL "Korgan_Redemption".
 - Added REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
 - Added README command in tp2.
 - Replaced AUTHOR keyword with SUPPORT.
 - Added VERSION flag.
 - Added German translation (from the BiG World Textpack German project). 
-- Updated and renamed readme files to korgan-readme-%LANGUAGE%.
-- Updated French and English translations (Gwendolyne).
+- Updated and renamed readme files to korgan-readme-%LANGUAGE%.txt.
+- Updated French and English translations (Gwendolyne) and integrated Hook71's English typo fixes ( http://www.shsforums.net/topic/46432-korgans-redemption/#entry534930 ).
+- Reorganized mod architecture tree: created folders to sort files according to their types.
 - Updated WeiDU installer to v246.
 
-v.9 (July 31, 2019)
-- BG2EE compatibility (thanks to Deratiseur).
+Version 9 (July 31, 2019)
+- Added native BG2EE compatibility (thanks to Deratiseur).
 
-v.8
+Version 8
 - Added French translation (thanks to Le Marquis, of the d'oghmatiques).
 - Fixed some bugs.
 
-v.7
+Version 7
 - Added Russian translation (thanks to Austin)
 
-v.6
+Version 6
 - Added English translation (thanks to Miloch for proof-reading).
 
-v.5
+Version 5
 - Added compatibility for my "Gorion's Ward" mod.
 
-v.4
+Version 4
 - Traified mod.
 - Made some small fixes.
 
-v.3 (Not beta anymore ;) )
+Version 3 (Not beta anymore ;) )
 - Fixed some bugs.
 - Tweaked some banters for CN Korgan.
 
-v.2 (beta)
+Version 2 (beta)
 - Fixed some bugs and typos in the Polish version.
 
-v.1 (beta)
+Version 1 (beta)
 - First version.

@@ -20,47 +20,52 @@ Ou alors, cherchez le sujet correspondant à ce mod sur le forum de SHS ( http://
 
 Historique
 
-v.10.0.0
-- Fichier Setup-Korgan.tp2 renommé korgan.tp2 pour une meilleure intégration dans le projet « Project Infinity » d'AL|EN.
-- Ajout du fichier de meta-données korgan.ini pour intégration dans le projet « Project Infinity » d'AL|EN.
-- Réorganisation de l'architecture du mod : création de répertoire pour classer les fichiers selon leur type.
-- Ajout d'un numéro (DESIGNATED) au composant.
-- Ajout de la procédure REQUIRE_PREDICATE pour éviter d'installer le mod dans des jeux auxquels il n'est pas destiné.
-- Ajout de la commande README dans le tp2.
-- Remplacement de la variable AUTHOR par SUPPORT.
-- Ajout du numéro de version.
-- Ajout de la traduction allemande (tirée du projet BiG World Textpack German). 
-- Mise à jour des fichiers readme renommés korgan-readme-%LANGUAGE%.
-- Mise à jour des traductions françaises et anglaises (Gwendolyne).
+Version 10.0.0
+- Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
+- Added korgan.ini metadata file to support AL|EN's "Project Infinity".
+- Revamped scripts: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with more accurate CamDawg's !StateCheck("XXX",CD_STATE_NOTVALID) and added InParty("XXX") whenever needed.
+- bio.baf: Added Continue() at the end of RESPONSE block.
+- ar6200.bcs: Added !Alignment("Korgan",CHAOTIC_NEUTRAL) condition to forbid original epilogue to be displayed.
+- Reorganized component (DESIGNATED number) and added LABEL "Korgan_Redemption".
+- Added REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
+- Added README command in tp2.
+- Replaced AUTHOR keyword with SUPPORT.
+- Added VERSION flag.
+- Added German translation (from the BiG World Textpack German project). 
+- Updated and renamed readme files to korgan-readme-%LANGUAGE%.txt.
+- Updated French and English translations (Gwendolyne) and integrated Hook71's English typo fixes ( http://www.shsforums.net/topic/46432-korgans-redemption/#entry534930 ).
+- Reorganized mod architecture tree: created folders to sort files according to their types.
 - Updated WeiDU installer to v246.
 
-v.9 (July 31, 2019)
-- Rendu compatible avec BG2EE (merci à Deratiseur).
-- Mise à jour de WeiDU (v246)
+Version 9 (July 31, 2019)
+- Added native BG2EE compatibility (thanks to Deratiseur).
 
-v.8
+Version 9 (July 31, 2019)
+- Rendu compatible avec BG2EE (merci à Deratiseur).
+
+Version 8
 - Ajout de la traduction française (merci à Le Marquis, des d'oghmatiques).
 - Correction de bugs
 
-v.7
+Version 7
 - Ajout de la traduction russe (merci à Austin).
 
-v.6
+Version 6
 - Ajout de la traduction anglaise (merci à Miloch pour la relecture).
 
-v.5
+Version 5
 - Mod rendu compatible avec le mod "Gorion's Ward".
 
-v.4
+Version 4
 - Traification du mod
 - Correction de quelques bugs mineurs.
 
-v.3 (qui n'est plus une beta ;) )
+Version 3 (qui n'est plus une beta ;) )
 - Correction de bugs.
 - Adaptation de quelques répliques pour un Korgan d'alignement CN
 
-v.2 (beta)
+Version 2 (beta)
 - Correction de bugs et de fautes de frappe dans la version polonaise.
 
-v.1 (beta)
+Version 1 (beta)
 - Première version.

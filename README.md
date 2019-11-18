@@ -1,22 +1,22 @@
 
-![Latest Release](https://img.shields.io/static/v1?label=release&message=v10.0.0&color=darkred)<a name="top" id="top">
-![Platform](https://img.shields.io/static/v1?label=platform&message=windows&color=informational)
+![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/KorgansRedemption?include_prereleases&color=darkred)<a name="top" id="top">
+![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)
 
 <div align="center"><h1></a>Korgan's Redemption (WIP)</h1>
 
-<h3>A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),
+<h3>A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
 
 </div><br />
 
 
-**Original Authors:** Picollo  
+**Original Author:** <a href="http://www.shsforums.net/user/12844-picollo/"Picollo /a> 
 **Mod Website and Forum:** <a href="http://www.shsforums.net/topic/46432-korgans-redemption/">Spellhold Studios</a><br /><br />
 
 
 <div align="center">
-<a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Versions History</a></center></br>
+<a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Versions History</a></br>
 </div>
 
 <hr>
@@ -31,6 +31,7 @@ You will NOT be able to stop this redemption nor help it. In the vanilla game, b
 It's recommended to start a new SoA game to benefit from the whole relationship between them. But I'm adding content only for ToB.
 
 If you are starting new ToB game, you should have Mazzy in party before Korgan.
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -51,9 +52,9 @@ This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. If 
 
 #### Notes
 
-<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run **setup-korgan.exe**, uninstall the previously installed main component and delete the korgan folder.</em>
+*If you've previously installed the mod, remove it before extracting the new version. To do this, run **`setup-korgan.exe`**, un-install the previously installed main component and delete the korgan folder.*
 
-<em>When installing or uninstalling, **do not close the DOS window** by clicking on the **X** button! Instead, press the **Enter** key whenever instructed to do so.</em>
+*When installing or un-installing, **do not close the DOS window** by clicking on the **X** button! Instead, press the **Enter** key whenever instructed to do so.*
 
 **Disable any antivirus** or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.
 
@@ -67,15 +68,37 @@ The Enhanced Editions are actively supported games. Please note that every patch
 
 #### Windows
 
-Extract the contents of the mod archive into the folder of the game you wish to modify (<em>the folder which contains the "CHITIN.KEY" file</em>), using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be a korgan folder and a setup-korgan.exe file in your game folder. To install, simply double-click **setup-korgan.exe** and follow the instructions on screen.
+Extract the contents of the mod archive into the folder of the game you wish to modify (*the folder which contains the "CHITIN.KEY" file*), using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be a :file_folder: korgan folder and a setup-korgan.exe file in your game folder. To install, simply double-click **`setup-korgan.exe`** and follow the instructions on screen.
 
-Run **setup-korgan.exe** in your game folder to reinstall, uninstall or otherwise change the component settings.
+Run **`setup-korgan.exe`** in your game folder to reinstall, un-install or otherwise change the component settings.
 
 ## 
 
-#### Note for Complete Uninstallation
+#### Mac OS X
 
-In addition to the methods above for removing individual components, you can completely uninstall the mod using **`setup-korgan --uninstall`** at the command line to remove all components without wading through prompts.</br>
+The The Slithering Menace for Mac OS X is distributed in the same compressed archive than the Windows one.
+
+First, extract the files from the archive into your game directory. On successful extraction, there should be a :file_folder: korgan folder, setup-korgan and setup-korgan.command files in your game folder. To install, simply double-click **`setup-korgan.command`** and follow the instructions on screen.
+
+Run **`setup-korgan.command`** in your game folder to reinstall, uninstall or otherwise change the components settings.
+
+## 
+
+#### Linux
+
+The The Slithering Menace for Linux is distributed in the same compressed archive than the Windows one and does not include a WeiDU installer.
+
+Extract the contents of the mod to the folder of the game you wish to modify.
+
+Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal, **cd** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+
+To install, run **`WeInstall setup-korgan`** in your game folder. Then run **`wine BGMain.exe`** (or **`wine Baldur.exe`** for EE games) and start playing.
+
+## 
+
+#### Note for Complete Un-installation
+
+In addition to the methods above for removing individual components, you can completely un-install the mod using **`setup-korgan --uninstall`** at the command line to remove all components without wading through prompts.</br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -98,9 +121,11 @@ The installer includes one single component, the main component.
 #### Special Acknowledgements to:
 
 - Gwendolyne: Fixed translations and released version 10.0.0.
-- Deratiseur: Provided the EE compatible version and released version 9.
+- AL|EN: Wrote process which automatically provides Windows, Linux and Mac versions in the same archive file.
+- Deratiseur: Provided the EE compatible version (version 9).
 - Le Marquis (the d'Oghmatiques): Provided French translation.
 - Austin: Provided Russian translation.
+- Hook71 for English typo fixes.
 - Miloch for proof-reading the English Translation.
 
 If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/46432-korgans-redemption/">mod forum</a>.</br>
@@ -108,8 +133,8 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 #### Copyrights Information
 
-###### Heart of the Wood is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Tin, based on material from the game Baldur's Gate II and its expansion.
-###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
+###### Korgan's Redemption is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Piccolo, based on material from the game Baldur's Gate II and its expansion.
+###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp.
 ###### All other trademarks and copyrights are the property of their respective owners.</br>
 <div align="right"><a href="#top">Back to top</a></div>
 
@@ -121,24 +146,27 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ##### Version 10.0.0
 
-- Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
-- Added korgan.ini metadata file to support AL|EN's "Project Infinity".
-- Reorganized mod architecture tree: created folders to sort files according to their types.
-- Reorganized component (DESIGNATED number).
-- Added REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
+- Renamed *Setup-Korgan.tp2* -> *korgan.tp2* to support AL|EN's "Project Infinity".
+- Added *korgan.ini metadata* file to support AL|EN's "Project Infinity".
+- Revamped scripts: Replaced old-school trigger conditions `!StateCheck("XXX",STATE_SLEEPING)` with more accurate CamDawg's `!StateCheck("XXX",CD_STATE_NOTVALID)` and added `InParty("XXX")` whenever needed.
+- bio.baf: Added `Continue()` at the end of RESPONSE block.
+- ar6200.bcs: Added `!Alignment("Korgan",CHAOTIC_NEUTRAL)` condition to forbid original epilogue to be displayed.
+- Reorganized component (*DESIGNATED* number) and added *LABEL* "*Korgan_Redemption*".
+- Added `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added README command in tp2.
 - Replaced AUTHOR keyword with SUPPORT.
 - Added VERSION flag.
-- Added German translation (from the BiG World Textpack German project). 
-- Updated and renamed readme files to korgan-readme-%LANGUAGE%.
-- Updated French and English translations (Gwendolyne).
+- Added German translation (from the BiG World Textpack German project).
+- Updated and renamed readme files to *korgan-readme-%LANGUAGE%.txt*.
+- Updated French and English translations (Gwendolyne) and integrated <a href="http://www.shsforums.net/topic/46432-korgans-redemption/#entry534930">Hook71's English typo fixes</a>.
+- Reorganized mod architecture tree: created folders to sort files according to their types.
 - Updated WeiDU installer to v246.
 
 ## 
 
 ##### Version 9 (July 31, 2019)
 
-- Added BG2EE compatibility by Deratiseur.
+- Added native BG2EE compatibility by Deratiseur.
 
 ## 
 

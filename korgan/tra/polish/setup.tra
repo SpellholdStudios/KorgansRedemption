@@ -4,6 +4,7 @@
 @10   = ~Pijany Najemnik~
 @11   = ~Po opuszczeniu dru¿yny, której przewodzi³<PRO_HESHE> <CHARNAME>, Korgan Krwawy Topór prowadzi³ ¿ycie pe³ne  przygód. Przej¹³ kontrolê nad ca³ym klanem krasnoludów, pokonuj¹c w pojedynku ich przywódcê i zmieniaj¹c ich chêæ zemsty w pragnienie wzbogacenia siê. Móg³ ¿yæ w luksusie, ale jego umi³owanie do poszukiwania przygód by³o silniejsze, dlatego nied³ugo potem wprawi³ w zadziwienie ca³e Krainy, zapuszczaj¹c siê do Podmroku. Brawurowy atak krasnoludów z pocz¹tku kompletnie zaskoczy³a mroczne elfy, ale utrzymanie terenów na terytorium drowów by³o zadaniem niewykonalnym. Po raz ostatni wykaza³ siê mêstwem, gdy samotnie os³ania³ odwrót krasnoludzkiego oddzia³u przed kontruderzeniem drowów. Gdy ich przywódca zosta³ zabity, krasnoludy nie zwa¿aj¹c na straty postanowi³y odzyskaæ jego cia³o. Na pogrzebie Korgana honorowe miejsce zajê³a Mazzy Fentan, nizio³ka, której zdanie Korgan zawsze bardzo ceni³. Krasnoludzkie legendy uwieczni³y ten wizerunek, a zwyka przyjaŸñ pomiêdzy nimi zosta³a przedstawiona jako namiêtny romans. Wygl¹da na to, ¿e historia wy¿ej ceni mi³oœæ  od prawdziwej przyjaŸni.~
 
+
 // WeiDU prompts
 @-1000 = ~Mod %TP2_FILE_NAME% posiada~
 @-1001 = ~opcjonalnych komponentow.
