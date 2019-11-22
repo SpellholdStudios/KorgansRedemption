@@ -17,7 +17,7 @@ Wszelkie problemy z modem proszê zg³aszaæ na forum CoBu w odpowiednim temacie ( 
 
 Lista zmian
 
-Version 10.0.0
+Version 10.0.0 (November 22, 2019)
 - Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
 - Added korgan.ini metadata file to support AL|EN's "Project Infinity".
 - Revamped scripts: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with more accurate CamDawg's !StateCheck("XXX",CD_STATE_NOTVALID) and added InParty("XXX") whenever needed.
@@ -38,14 +38,14 @@ Version 10.0.0
 Version 9 (July 31, 2019)
 - Added native BG2EE compatibility (thanks to Deratiseur).
 
-Version 8
+Version 8 (March 27, 2011)
 - francuskie t³umaczenie (podziêkowania dla Le Marquis za t³umaczenie).
 - poprawione kilka b³êdów.
 
-Version 7
+Version 7 (November 18, 2010)
 - rosyjskie t³umaczenie (podziêkowania dla Austina za t³umaczenie).
 
-Version 6
+Version 6 (October 30, 2010)
 - angielskie t³umaczenie (podziêkowania dla Milocha za korektê).
 
 Version 5

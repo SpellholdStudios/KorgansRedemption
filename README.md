@@ -145,7 +145,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## <a name="versions" id="versions"></a>Versions History
 
-##### Version 10.0.0
+##### Version 10.0.0 (November 22, 2019)
 
 - Renamed *Setup-Korgan.tp2* -> *korgan.tp2* to support AL|EN's "Project Infinity".
 - Added *korgan.ini metadata* file to support AL|EN's "Project Infinity".
@@ -172,20 +172,20 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## 
 
-##### Version 8
+##### Version 8 (March 27, 2011)
 
 - Added French translation (thanks to Le Marquis, of the d'oghmatiques).
 - Fixed some bugs.
 
 ## 
 
-##### Version 7
+##### Version 7 (November 18, 2010)
 
 - Added Russian translation (thanks to Austin)
 
 ## 
 
-##### Version 6
+##### Version 6 (October 30, 2010)
 
 - Added English translation (thanks to Miloch for proof-reading).
 

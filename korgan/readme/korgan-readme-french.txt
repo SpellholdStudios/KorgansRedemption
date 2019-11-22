@@ -20,7 +20,7 @@ Ou alors, cherchez le sujet correspondant à ce mod sur le forum de SHS ( http://
 
 Historique
 
-Version 10.0.0
+Version 10.0.0 (November 22, 2019)
 - Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
 - Added korgan.ini metadata file to support AL|EN's "Project Infinity".
 - Revamped scripts: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with more accurate CamDawg's !StateCheck("XXX",CD_STATE_NOTVALID) and added InParty("XXX") whenever needed.
@@ -44,14 +44,14 @@ Version 9 (July 31, 2019)
 Version 9 (July 31, 2019)
 - Rendu compatible avec BG2EE (merci à Deratiseur).
 
-Version 8
+Version 8 (March 27, 2011)
 - Ajout de la traduction française (merci à Le Marquis, des d'oghmatiques).
 - Correction de bugs
 
-Version 7
+Version 7 (November 18, 2010)
 - Ajout de la traduction russe (merci à Austin).
 
-Version 6
+Version 6 (October 30, 2010)
 - Ajout de la traduction anglaise (merci à Miloch pour la relecture).
 
 Version 5

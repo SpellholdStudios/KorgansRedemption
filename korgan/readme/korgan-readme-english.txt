@@ -20,7 +20,7 @@ or find the topic on SHS ( http://www.shsforums.net/topic/46432-korgans-redempti
 
 Changelog
 
-Version 10.0.0
+Version 10.0.0 (November 22, 2019)
 - Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
 - Added korgan.ini metadata file to support AL|EN's "Project Infinity".
 - Revamped scripts: Replaced old-school trigger conditions !StateCheck("XXX",STATE_SLEEPING) with more accurate CamDawg's !StateCheck("XXX",CD_STATE_NOTVALID) and added InParty("XXX") whenever needed.
@@ -41,14 +41,14 @@ Version 10.0.0
 Version 9 (July 31, 2019)
 - Added native BG2EE compatibility (thanks to Deratiseur).
 
-Version 8
+Version 8 (March 27, 2011)
 - Added French translation (thanks to Le Marquis, of the d'oghmatiques).
 - Fixed some bugs.
 
-Version 7
+Version 7 (November 18, 2010)
 - Added Russian translation (thanks to Austin)
 
-Version 6
+Version 6 (October 30, 2010)
 - Added English translation (thanks to Miloch for proof-reading).
 
 Version 5
