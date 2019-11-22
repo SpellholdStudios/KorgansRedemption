@@ -120,9 +120,10 @@ The installer includes one single component, the main component.
 
 #### Special Acknowledgements to:
 
-- Gwendolyne: Fixed translations and released version 10.0.0.
+- Gwendolyne: Fixed translations, revamped code and released version 10.0.0.
 - AL|EN: Wrote process which automatically provides Windows, Linux and Mac versions in the same archive file.
-- Deratiseur: Provided the EE compatible version (version 9).
+- Deratiseur: Provided native EE compatible version (v9).
+- The BiG World Textpack German team: Provided German translation.
 - Le Marquis (the d'Oghmatiques): Provided French translation.
 - Austin: Provided Russian translation.
 - Hook71 for English typo fixes.
@@ -151,7 +152,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Revamped scripts: Replaced old-school trigger conditions `!StateCheck("XXX",STATE_SLEEPING)` with more accurate CamDawg's `!StateCheck("XXX",CD_STATE_NOTVALID)` and added `InParty("XXX")` whenever needed.
 - bio.baf: Added `Continue()` at the end of RESPONSE block.
 - ar6200.bcs: Added `!Alignment("Korgan",CHAOTIC_NEUTRAL)` condition to forbid original epilogue to be displayed.
-- Reorganized component (*DESIGNATED* number) and added *LABEL* "*Korgan_Redemption*".
+- Reorganized component (*DESIGNATED* number) and added "*Korgan_Redemption*" *LABEL*.
 - Added `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added README command in tp2.
 - Replaced AUTHOR keyword with SUPPORT.
@@ -160,6 +161,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Updated and renamed readme files to *korgan-readme-%LANGUAGE%.txt*.
 - Updated French and English translations (Gwendolyne) and integrated <a href="http://www.shsforums.net/topic/46432-korgans-redemption/#entry534930">Hook71's English typo fixes</a>.
 - Reorganized mod architecture tree: created folders to sort files according to their types.
+- Included Linux and Mac Os X versions in the same package (thanks AL|EN!).
 - Updated WeiDU installer to v246.
 
 ## 
