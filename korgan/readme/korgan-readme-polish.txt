@@ -34,6 +34,7 @@ Version 10.0.0 (November 22, 2019)
 - Reorganized mod architecture tree: created folders to sort files according to their types.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN!).
 - Updated WeiDU installer to v246.
+- Transferred mod to SpellHold Studios GitHub account.
 
 Version 9 (July 31, 2019)
 - Added native BG2EE compatibility (thanks to Deratiseur).

@@ -163,6 +163,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Reorganized mod architecture tree: created folders to sort files according to their types.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN!).
 - Updated WeiDU installer to v246.
+- Transferred mod to SpellHold Studios GitHub account.
 
 ## 
 
