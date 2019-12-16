@@ -18,7 +18,11 @@ Please report all problems with this mod at the CoB forum and we will respond to
 or find the topic on SHS ( http://www.shsforums.net/topic/46432-korgans-redemption/ ).
 
 
-Changelog
+Change log
+
+Version 10.0.1 (December 14, 2019)
+- Fixed an issue with Auto-Package Generator tool: new version of MacOS (Catalina) prevented the mod to be installed.
+- Lower cased LABEL name for consistency.
 
 Version 10.0.0 (November 22, 2019)
 - Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
