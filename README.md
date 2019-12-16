@@ -1,9 +1,9 @@
 
-![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/KorgansRedemption?include_prereleases&color=darkred)<a name="top" id="top">
+![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/KorgansRedemption?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)
 
-<div align="center"><h1></a>Korgan's Redemption (WIP)</h1>
+<div align="center"><h1></a>Korgan's Redemption</h1>
 
 <h3>A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
@@ -12,7 +12,9 @@ Baldur's Gate Trilogy and EET<h3>
 
 
 **Original Author:** <a href="http://www.shsforums.net/user/12844-picollo/">Picollo</a>  
-**Mod Website and Forum:** <a href="http://www.shsforums.net/topic/46432-korgans-redemption/">Spellhold Studios</a><br /><br />
+**Mod Website and Forum:** <a href="http://www.shsforums.net/topic/46432-korgans-redemption/">Spellhold Studios</a><br />
+
+**Note:** This mod does not belong to the IEP NPC's Friendship project and its writing may be confusing for people used to Korgan's way of speaking.<br><br>
 
 
 <div align="center">
@@ -144,6 +146,13 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 
 ## <a name="versions" id="versions"></a>Versions History
+
+##### Version 10.0.1 (December 14, 2019)
+
+- Fixed an issue with *Auto-Package Generator tool*: new version of MacOS (Catalina) prevented the mod to be installed.
+- Lower cased LABEL name for consistency.
+
+## 
 
 ##### Version 10.0.0 (November 22, 2019)
 

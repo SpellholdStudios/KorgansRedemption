@@ -17,6 +17,10 @@ Wszelkie problemy z modem proszê zg³aszaæ na forum CoBu w odpowiednim temacie ( 
 
 Lista zmian
 
+Version 10.0.1 (December 14, 2019)
+- Fixed an issue with Auto-Package Generator tool: new version of MacOS (Catalina) prevented the mod to be installed.
+- Lower cased LABEL name for consistency.
+
 Version 10.0.0 (November 22, 2019)
 - Renamed Setup-Korgan.tp2 -> korgan.tp2 to support AL|EN's "Project Infinity".
 - Added korgan.ini metadata file to support AL|EN's "Project Infinity".
